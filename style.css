@@ -24,7 +24,10 @@
   font-display: swap;
   font-weight: 700;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   scroll-behavior: initial;
   overflow: hidden;
@@ -53,6 +56,42 @@ body {
 
 .loaderEgg {
   background-color: black;
+}
+
+.HoverText {
+  color: blue;
+}
+
+#loadingScreen {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.loadingImage {
+  margin: auto;
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.clickMe {
+  color: wheat;
+  position: absolute;
+  margin-top: 40rem;
+  font-size: xx-large;
 }
 
 h2 {
@@ -142,33 +181,4 @@ section {
   font-weight: 900;
   font-stretch: condensed;
   color: #ff98a2;
-}
-
-.loader {
-  animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.clickText {
-  font-size: xx-large;
-  color: white;
-  padding: 0;
-  margin: 0;
-}
-.egg-image {
-  margin: 0;
-  padding: 0;
 }
