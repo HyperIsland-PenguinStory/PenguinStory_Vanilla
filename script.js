@@ -38,8 +38,8 @@ loadingImage.addEventListener("click", function () {
     while (particles.length < 100) {
       let particle = {
         x: Math.random() * ctx.canvas.width, // x position within the window width
-        y: 0, // y position starts at 0 (top of the window)
-        size: Math.random() * 5, // random size
+        y: Math.random() * ctx.canvas.height, // y position starts at 0 (top of the window)
+        size: Math.random() * 2, // random size
         speedX: Math.random() * 3 - 1, // random speed in the x direction
         speedY: Math.random() * 3, // random speed in the y direction
       };
@@ -67,10 +67,7 @@ loadingImage.addEventListener("click", function () {
 
   tick();
 
-  // Run your GSAP animations or any other scripts you need here
-  // runAnimations();
-
-  // Testing snoweffect under:
+  // Lenis goes here
 
   const lenis = new Lenis({
     duration: 1.2,
@@ -102,19 +99,4 @@ loadingImage.addEventListener("click", function () {
       scrub: true,
     });
   });
-
-  // const section_2 = document.getElementById("horizontal");
-  // let box_items = gsap.utils.toArray(".horizontal__item");
-
-  // gsap.to(box_items, {
-  //   xPercent: -100 * (box_items.length - 1),
-  //   ease: "sine.out",
-  //   scrollTrigger: {
-  //     trigger: section_2,
-  //     pin: true,
-  //     scrub: 3,
-  //     snap: 1 / (box_items.length - 1),
-  //     end: "+=" + section_2.offsetWidth,
-  //   },
-  // });
 });
