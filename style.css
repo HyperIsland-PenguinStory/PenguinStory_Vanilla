@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/frozen-ice");
 @font-face {
   font-family: Slussen;
   src: url(/fonts/Slussen-Compressed-Black.woff2) format("woff2");
@@ -92,6 +93,7 @@ body {
   position: absolute;
   margin-top: 40rem;
   font-size: xx-large;
+  font-family: "FROZEN ICE-Light", sans-serif;
 }
 
 h2 {
@@ -181,4 +183,8 @@ section {
   font-weight: 900;
   font-stretch: condensed;
   color: #ff98a2;
+}
+
+.welcome-page {
+  font-family: "FROZEN ICE-Light", sans-serif;
 }

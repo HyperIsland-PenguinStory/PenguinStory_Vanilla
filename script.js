@@ -12,6 +12,8 @@ loadingImage.addEventListener("click", function () {
   // Run your GSAP animations or any other scripts you need here
   // runAnimations();
 
+  // Testing snoweffect under:
+
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
