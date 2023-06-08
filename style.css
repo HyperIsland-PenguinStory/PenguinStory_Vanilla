@@ -89,7 +89,7 @@ body {
 }
 
 .clickMe {
-  color: wheat;
+  color: rgb(102, 165, 207);
   position: absolute;
   margin-top: 40rem;
   font-size: xx-large;
@@ -100,7 +100,6 @@ h2 {
   font-size: 60px;
   font-weight: 900;
   line-height: 85%;
-  border-left: 3px solid #ff98a2;
   padding: 25px;
   margin: 0;
 }
@@ -112,7 +111,7 @@ h2 span {
 h3 {
   font-size: 20px;
   font-stretch: expanded;
-  color: #ff98a2;
+  color: blue;
   line-height: 100%;
 }
 
@@ -162,29 +161,20 @@ section {
   margin-bottom: 240px;
 }
 
-#horizontal {
-  padding: 100px 0;
-}
-
-.horizontal__content {
-  display: flex;
-}
-
-.horizontal__item {
-  border: 1px solid #efefef;
-  padding: 200px 150px;
-}
-.horizontal__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.horizontal__num {
-  font-size: 80px;
-  font-weight: 900;
-  font-stretch: condensed;
-  color: #ff98a2;
-}
-
 .welcome-page {
   font-family: "FROZEN ICE-Light", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 26rem;
+}
+.end-page {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  font-family: "FROZEN ICE-Light", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
