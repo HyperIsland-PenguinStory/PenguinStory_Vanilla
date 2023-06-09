@@ -104,10 +104,6 @@ h4 {
   margin: auto;
 }
 
-section {
-  padding: 50px 0;
-}
-
 .col {
   width: 50%;
 }
@@ -172,7 +168,7 @@ section {
   height: 150vh;
   margin: 0;
   background-image: url("FamilyPenguin.png");
-  background-size: 150%;
+  background-size: 114% 100%;
   background-position: center;
 }
 
