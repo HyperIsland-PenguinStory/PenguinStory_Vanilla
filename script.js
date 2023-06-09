@@ -4,11 +4,18 @@ const mainContent = document.getElementById("mainContent");
 
 loadingImage.addEventListener("click", function () {
   // Hide loading screen
-  loadingScreen.style.display = "nonee";
+  loadingScreen.style.display = "none";
 
   // Show main content
   mainContent.style.display = "block";
 
+  const audio = new Audio("PenguinWave.mp3");
+  audio.loop = true;
+  audio.play();
+  scrolltrigger();
+});
+
+function init() {
   // Snowfall effect
   let ctx = document.createElement("canvas").getContext("2d");
   document.body.appendChild(ctx.canvas);
@@ -83,8 +90,12 @@ loadingImage.addEventListener("click", function () {
   requestAnimationFrame(raf);
 
   // Select all sections
+
+  window.addEventListener("resize", scrolltrigger);
+}
+
+function scrolltrigger() {
   const sections = document.querySelectorAll(".vertical-section");
-  let count = 0;
   sections.forEach((section) => {
     const col_left = section.querySelector(".col_left");
     const timeline = gsap.timeline({ paused: true });
@@ -99,4 +110,6 @@ loadingImage.addEventListener("click", function () {
       scrub: true,
     });
   });
-});
+}
+
+init();

@@ -54,6 +54,10 @@ body {
   }
 }
 
+.familyPenguin {
+  width: 100vw;
+  margin-top: 650px;
+}
 .clickMe {
   color: rgb(102, 165, 207);
   position: absolute;
@@ -157,4 +161,21 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.welcome-page {
+  font-family: "FROZEN ICE-Light", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  margin: 0;
+  background-image: url("FamilyPenguin.png");
+  background-size: 150%;
+  background-position: center;
+}
+
+.welcome-page h2 {
+  color: #172f4e;
 }
