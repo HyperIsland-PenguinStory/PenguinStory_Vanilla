@@ -100,6 +100,7 @@ function scrolltrigger() {
     const col_left = section.querySelector(".col_left");
     const timeline = gsap.timeline({ paused: true });
     const distance = section.offsetHeight - col_left.offsetHeight;
+    console.log(distance, section.offsetHeight, col_left.offsetHeight);
     timeline.fromTo(col_left, { y: 0 }, { y: distance, ease: "none" }, 0);
 
     ScrollTrigger.create({
