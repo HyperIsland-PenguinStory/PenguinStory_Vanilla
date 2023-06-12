@@ -10,7 +10,7 @@ loadingImage.addEventListener("click", function () {
   mainContent.style.display = "block";
 
   const audio = new Audio("PenguinWave.mp3");
-  audio.loop = true;
+  audio.loop = false;
   audio.play();
   scrolltrigger();
 });
