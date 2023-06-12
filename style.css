@@ -1,30 +1,8 @@
-@import url("https://fonts.cdnfonts.com/css/frozen-ice");
-@font-face {
-  font-family: Slussen;
-  src: url(/fonts/Slussen-Compressed-Black.woff2) format("woff2");
-  font-display: swap;
-  font-weight: 900;
-  font-stretch: compressed;
-}
-@font-face {
-  font-family: Slussen;
-  src: url(/fonts/Slussen-Expanded-Black.woff2) format("woff2");
-  font-display: swap;
-  font-weight: 900;
-  font-stretch: expanded;
-}
-@font-face {
-  font-family: Slussen;
-  src: url(/fonts/Slussen-Regular.woff2) format("woff2");
-  font-display: swap;
-  font-weight: 400;
-}
-@font-face {
-  font-family: Slussen;
-  src: url(/fonts/Slussen-Bold.woff2) format("woff2");
-  font-display: swap;
-  font-weight: 700;
-}
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/st-maknyus");
+@import url("https://fonts.cdnfonts.com/css/clingy");
+
 * {
   margin: 0;
   padding: 0;
@@ -45,14 +23,11 @@ body {
   font-size: 16px;
   font-weight: 400;
   background: rgb(69, 122, 181);
-  background: linear-gradient(
-    90deg,
+  background: radial-gradient(
+    circle,
     rgba(69, 122, 181, 1) 0%,
-    rgba(96, 206, 208, 1) 5%,
-    rgba(13, 159, 215, 0.9444152661064426) 41%,
-    rgba(0, 212, 255, 1) 100%
+    rgba(23, 47, 78, 1) 73%
   );
-  color: #fff;
 }
 
 .loaderEgg {
@@ -88,19 +63,22 @@ body {
   }
 }
 
+.familyPenguin {
+  width: 100vw;
+  margin-top: 650px;
+}
 .clickMe {
-  color: wheat;
+  color: rgb(102, 165, 207);
   position: absolute;
   margin-top: 40rem;
   font-size: xx-large;
-  font-family: "FROZEN ICE-Light", sans-serif;
+  font-family: "Clingy", sans-serif;
 }
 
 h2 {
   font-size: 60px;
   font-weight: 900;
   line-height: 85%;
-  border-left: 3px solid #ff98a2;
   padding: 25px;
   margin: 0;
 }
@@ -112,8 +90,16 @@ h2 span {
 h3 {
   font-size: 20px;
   font-stretch: expanded;
-  color: #ff98a2;
+  color: #b9d2df;
   line-height: 100%;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  color: white;
+  margin-top: 1rem;
 }
 
 h2,
@@ -127,16 +113,20 @@ h4 {
   margin: auto;
 }
 
-section {
-  padding: 50px 0;
-}
-
 .col {
   width: 50%;
 }
 
+.col_left {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  bottom: 0;
+}
+
 .col_left img {
-  height: 300px;
+  height: 75vh;
+  margin-right: 40px;
 }
 
 #vertical {
@@ -162,29 +152,64 @@ section {
   margin-bottom: 240px;
 }
 
-#horizontal {
-  padding: 100px 0;
-}
+.welcome-page {
+  font-family: "St Maknyus", sans-serif;
 
-.horizontal__content {
   display: flex;
-}
-
-.horizontal__item {
-  border: 1px solid #efefef;
-  padding: 200px 150px;
-}
-.horizontal__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.horizontal__num {
-  font-size: 80px;
-  font-weight: 900;
-  font-stretch: condensed;
-  color: #ff98a2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 26rem;
 }
 
 .welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: top;
+  height: 100vh;
+  margin: 0;
+  background-image: url("FamilyPenguin.png");
+  background-size: 114% 100%;
+  background-position: center;
+}
+
+.welcome-title {
+  margin-bottom: 30rem;
+  font-family: "St Maknyus", sans-serif;
+  color: #172f4e;
+  font-family: "Clingy", sans-serif;
+  padding-top: 2 rem;
+}
+.scroll-title {
+  padding-top: 4.5rem;
+  font-family: "Clingy", sans-serif;
+  font-size: x-small;
+}
+
+.intro {
+  padding-top: 7rem;
+}
+.end-page {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
   font-family: "FROZEN ICE-Light", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Clingy", sans-serif;
+}
+
+.end-page h2 {
+  color: #b9d2df;
+  margin-bottom: 2rem;
+}
+.end-page {
+  margin-bottom: 0;
+  height: 50vh;
+}
+
+.end-page img {
+  width: 100%;
 }
