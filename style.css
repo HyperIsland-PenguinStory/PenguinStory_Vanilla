@@ -47,7 +47,8 @@ body {
 
 .loadingImage {
   margin: auto;
-  animation: spin 10s linear infinite;
+
+  /* animation: spin 10s linear infinite; */
 }
 @keyframes spin {
   0% {
@@ -87,7 +88,7 @@ h2 span {
   display: block;
 }
 
-h3 {
+.vertical__item h3 {
   font-size: 20px;
   font-stretch: expanded;
   color: #b9d2df;
@@ -97,9 +98,22 @@ h3 {
   letter-spacing: 0.2rem;
 }
 
+.scroll-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.scroll-link:hover {
+  text-decoration: underline;
+}
+
 p {
   color: white;
   margin-top: 1rem;
+  font-family: "Clingy";
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 h2,
@@ -187,9 +201,9 @@ h4 {
   font-size: x-small;
 }
 
-.intro {
+/* .intro {
   padding-top: 7rem;
-}
+} */
 .end-page {
   margin-top: 20rem;
   margin-bottom: 10rem;
@@ -212,4 +226,17 @@ h4 {
 
 .end-page img {
   width: 100%;
+}
+
+.vertical__item_top_title {
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+  color: #fcbacb;
+  font-family: "Clingy";
+  font-weight: 50;
+  line-height: 1.2rem;
+}
+
+.vertical__item_top_title h3 {
+  font-size: 2rem;
 }
