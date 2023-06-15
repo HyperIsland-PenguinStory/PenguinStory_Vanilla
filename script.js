@@ -1,18 +1,40 @@
 const loadingScreen = document.getElementById("loadingScreen");
 const loadingImage = document.getElementById("loadingImage");
 const mainContent = document.getElementById("mainContent");
+let clickCount = 0;
 
 loadingImage.addEventListener("click", function () {
-  // Hide loading screen
-  loadingScreen.style.display = "none";
+  clickCount++;
 
-  // Show main content
-  mainContent.style.display = "block";
+  if (clickCount === 1) {
+    loadingImage.src = "Egg2.png";
+  } else if (clickCount === 2) {
+    loadingImage.src = "Egg3.png";
+  } else if (clickCount === 3) {
+    loadingImage.src = "Egg6.png";
+  }
 
-  const audio = new Audio("PenguinWave.mp3");
-  audio.loop = false;
-  audio.play();
-  scrolltrigger();
+  if (clickCount <= 3) {
+    const audio = new Audio("eggCracking.mp3");
+    audio.currentTime = 0; // Reset the playback time to start from the beginning
+    audio.playbackRate = 1; // Increase the playback rate to play faster
+    audio.play();
+  }
+
+  if (clickCount === 4) {
+    loadingImage.style.display = "none"; // Hide the image after the last click
+
+    // Hide loading screen
+    loadingScreen.style.display = "none";
+
+    // Show main content
+    mainContent.style.display = "block";
+
+    const finalAudio = new Audio("PenguinWave.mp3");
+    finalAudio.loop = false;
+    finalAudio.play();
+    scrolltrigger();
+  }
 });
 
 function init() {
