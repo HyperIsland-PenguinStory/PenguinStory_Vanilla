@@ -11,7 +11,7 @@ loadingImage.addEventListener("click", function () {
   } else if (clickCount === 2) {
     loadingImage.src = "Egg3.png";
   } else if (clickCount === 3) {
-    loadingImage.src = "Egg4.png";
+    loadingImage.src = "Egg6.png";
   }
 
   if (clickCount <= 3) {
